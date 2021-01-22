@@ -39,7 +39,7 @@ function hotelCost(night) {
             cost = 100 * night;
             return cost;
         }
-        else if (night > 10 && night <= 20) { 
+        else if (night > 10 && night <= 20) {
             var first10Day = 100 * 10;
             night = night - 10;
             var second10Day = night * 80;
@@ -65,11 +65,11 @@ function hotelCost(night) {
 function megaFriend(friend) {
     var check = friend[0]; //The first value of friend array
     var store = []; //store for similar length of name.
-    var k=0; //for continue store array index.
+    var k = 0; //for continue store array index.
     for (var i = 0; i < friend.length; i++) {
         if (friend[i].length >= check.length) {
             check = friend[i];
-            store[k]= check;
+            store[k] = check;
             k++;
         }
     }
